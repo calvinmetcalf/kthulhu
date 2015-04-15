@@ -1,0 +1,29 @@
+{
+  "name": "cthulhu",
+  "version": "0.0.1",
+  "description": "Simpler transform streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run tap",
+    "tap": "NODE_ENV=development tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bucaran/cthulhu"
+  },
+  "keywords": [
+    "streams",
+    "transform",
+    "cthulhu"
+  ],
+  "author": "Jorge Bucaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bucaran/cthulhu/issues"
+  },
+  "homepage": "https://github.com/bucaran/cthulhu",
+  "dependencies": {
+    "readable-stream": "^1.0.33",
+    "tap": "^0.7.1"
+  }
+}
