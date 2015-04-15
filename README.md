@@ -52,10 +52,10 @@ npm install kthulhu
 ## Simple Transformation
 
 ```js
-var go = require("kthulhu")
+var $ = require("kthulhu")
 
 process.stdin
-  .pipe(go(function (chunk) {
+  .pipe($(function (chunk) {
     return chunk.toString().split("").reverse().join("")
   }))
   .pipe(process.stdout)
@@ -71,13 +71,13 @@ kthulhu⏎
 `return chunk` is used to notify the stream implementation we are _done_ processing the supplied chunk. If your transformation is asynchrounous, you can return a [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) instead and kthulhu will apply its resolved value to the buffer (whenever that happens).
 
 ```js
-var go = require("kthulhu");
+var $ = require("kthulhu");
 
 process.stdin
-  .pipe(go(function (chunk) {
+  .pipe($(function (chunk) {
     return chunk.toString().toUpperCase()
   }))
-  .pipe(go(function (chunk) {
+  .pipe($(function (chunk) {
     // complicate it with a Promise
     return new Promise(function(resolve) {
       setTimeout(function () {
