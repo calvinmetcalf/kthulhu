@@ -14,12 +14,13 @@ var Kthulhu = module.exports = function (options, transform, flush) {
 
   if (isFunction(options)) {
     // shift arguments so users can ignore `options`
-    transform = options
     flush = transform
+    transform = options
     options = {}
   }
 
   this.options = options
+
   this._flush = isFunction(flush) ? flush : null
   this._userTransform = isFunction(transform) ? transform :
     function (chunk) {
@@ -35,8 +36,7 @@ Kthulhu.prototype._transform = function (chunk, encoding, next) {
   var result = this._userTransform(chunk, encoding, next) || null
 
   var push = function (value) {
-    this.push(value)
-    next()
+    next(null, value)
   }.bind(this)
 
   if (result instanceof Promise) {
