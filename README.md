@@ -23,6 +23,12 @@
 <em><strong><a href="https://www.google.co.jp/search?q=kthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">kthulhu</a>'s Simpler transform Streams</strong></em>
 </p>
 
+```js
+===> stdin.pipe(kthulhu(function (chunk) {
+  return /* new chunk*/
+})).pipe(stdout)===>
+```
+
 <hr>
 
 
