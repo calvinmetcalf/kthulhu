@@ -95,6 +95,45 @@ HELLO!
 >>>>>⏎
 ```
 
+## Simple CSS Selector with [Trumpet](https://github.com/substack/node-trumpet)
+
+```js
+function css(clss, transform) {
+  var tr = require('trumpet')()
+  var $ = require('kthulhu')
+
+  clss = tr.select(clss).createStream()
+  clss.pipe($(function (buf) {
+    return transform(buf)
+  })).pipe(clss)
+
+  return tr
+}
+
+/*
+./source.html
+
+  <html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div class="section">
+      This is what you'll get!
+    </div>
+  </body>
+  </html>
+*/
+
+var fs = require("fs")
+var rs = fs.createReadStream(__dirname + "/source.html")
+  .pipe(css(".section", function (html) {
+    return /* transform html */
+  }))
+  .pipe(process.stdout)
+```
+
+
 # License
 
 [MIT](http://opensource.org/licenses/MIT)
