@@ -24,9 +24,10 @@
 </p>
 
 ```js
-===> stdin.pipe(kthulhu(function (chunk) {
-  return /* new chunk*/
-})).pipe(stdout)===>
+
+IN.pipe($(function (chunk) {
+  return /*transform chunk*/
+})).pipe(OUT)
 ```
 
 <hr>
