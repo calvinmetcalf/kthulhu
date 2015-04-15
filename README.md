@@ -10,7 +10,7 @@
 |
 <b><a href="#examples">Examples</a></b>
 |
-<b><a href="#about">About</a></b>
+<b><a href="#license">License</a></b>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-<em><strong><a href="https://www.google.co.jp/search?q=cthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">cthulhu</a> simpler transform streams</strong></em>
+<em><strong><a href="https://www.google.co.jp/search?q=cthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">Cthulhu</a>'s Simpler transform Streams</strong></em>
 </p>
 
 <hr>
@@ -28,7 +28,7 @@
 
 # Synopsis
 
-cthulhu is a [through2](https://github.com/rvagg/through2)-like simpler **transform**/passthru Stream wrapper. Uses [`readable-stream`](https://github.com/iojs/readable-stream) help fight global warming.
+cthulhu is a [through2](https://github.com/rvagg/through2)-like simpler **transform**/passthru Stream wrapper. Uses [`readable-stream`](https://github.com/iojs/readable-stream) to help fight global warming and city crime.
 
 To push contents to the buffer simply `return chunk` inside your `transform` callback.
 
@@ -91,7 +91,7 @@ HELLO!
 >>>>>⏎
 ```
 
-# About
+# License
 
 [MIT](http://opensource.org/licenses/MIT)
 
