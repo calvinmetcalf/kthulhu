@@ -1,7 +1,7 @@
 [![Build Status][TravisLogo]][Travis] ![](https://img.shields.io/cocoapods/l/AFNetworking.svg)
 
 
-<a name="cthulhu"></a>
+<a name="kthulhu"></a>
 
 <p align="center">
 <b><a href="#synopsis">Synopsis</a></b>
@@ -14,13 +14,13 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/bucaran/cthulhu/blob/master/cthulhu">
+<a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
 <img width=40% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
 </a>
 </p>
 
 <p align="center">
-<em><strong><a href="https://www.google.co.jp/search?q=cthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">Cthulhu</a>'s Simpler transform Streams</strong></em>
+<em><strong><a href="https://www.google.co.jp/search?q=kthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">kthulhu</a>'s Simpler transform Streams</strong></em>
 </p>
 
 <hr>
@@ -28,7 +28,7 @@
 
 # Synopsis
 
-cthulhu is a [through2](https://github.com/rvagg/through2)-like simpler **transform**/passthru Stream wrapper. Uses [`readable-stream`](https://github.com/iojs/readable-stream) to help fight global warming and city crime.
+kthulhu is a [through2](https://github.com/rvagg/through2)-like simpler **transform**/passthru Stream wrapper. Uses [`readable-stream`](https://github.com/iojs/readable-stream) to help fight global warming and city crime.
 
 To push contents to the buffer simply `return chunk` inside your `transform` callback.
 
@@ -37,7 +37,7 @@ You can also return a [`Promise`](https://developer.mozilla.org/en/docs/Web/Java
 # Install
 
 ```sh
-npm install cthulhu
+npm install kthulhu
 ```
 
 # Examples
@@ -48,7 +48,7 @@ npm install cthulhu
 ## Simple Transformation
 
 ```js
-var go = require("cthulhu")
+var go = require("kthulhu")
 
 process.stdin
   .pipe(go(function (chunk) {
@@ -58,16 +58,16 @@ process.stdin
 ```
 
 ```sh
-» echo "uhluhtc" | ./example.js
-cthulhu⏎
+» echo "uhluhtk" | ./example.js
+kthulhu⏎
 ```
 
 ## Using Promises
 
-`return chunk` is used to notify the stream implementation we are _done_ processing the supplied chunk. If your transformation is asynchrounous, you can return a [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) instead and cthulhu will apply its resolved value to the buffer (whenever that happens).
+`return chunk` is used to notify the stream implementation we are _done_ processing the supplied chunk. If your transformation is asynchrounous, you can return a [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) instead and kthulhu will apply its resolved value to the buffer (whenever that happens).
 
 ```js
-var go = require("cthulhu");
+var go = require("kthulhu");
 
 process.stdin
   .pipe(go(function (chunk) {
@@ -95,6 +95,6 @@ HELLO!
 
 [MIT](http://opensource.org/licenses/MIT)
 
-[TravisLogo]: https://travis-ci.org/bucaran/cthulhu.svg?branch=master
+[TravisLogo]: https://travis-ci.org/bucaran/kthulhu.svg?branch=master
 
-[Travis]: https://travis-ci.org/bucaran/cthulhu
+[Travis]: https://travis-ci.org/bucaran/kthulhu

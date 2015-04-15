@@ -6,10 +6,10 @@ function isFunction (f) {
   return "function" === typeof f
 }
 
-var Cthulhu = module.exports = function (options, transform, flush) {
-  if (!(this instanceof Cthulhu)) {
+var Kthulhu = module.exports = function (options, transform, flush) {
+  if (!(this instanceof Kthulhu)) {
     // simple class instantiation trick
-    return new Cthulhu(options, transform, flush)
+    return new Kthulhu(options, transform, flush)
   }
 
   if (isFunction(options)) {
@@ -29,9 +29,9 @@ var Cthulhu = module.exports = function (options, transform, flush) {
   Transform.call(this, options)
 }
 
-Util.inherits(Cthulhu, Transform)
+Util.inherits(Kthulhu, Transform)
 
-Cthulhu.prototype._transform = function (chunk, encoding, next) {
+Kthulhu.prototype._transform = function (chunk, encoding, next) {
   var result = this._userTransform(chunk, encoding, next) || null
 
   var push = function (value) {
