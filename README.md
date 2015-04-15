@@ -24,10 +24,7 @@
 </p>
 
 ```js
-
-IN.pipe($(function (chunk) {
-  return /*transform chunk*/
-})).pipe(OUT)
+IN.pipe($(function (chunk) { return /*transform chunk*/ })).pipe(OUT)
 ```
 
 <hr>
