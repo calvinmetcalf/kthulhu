@@ -1,7 +1,7 @@
 {
   "name": "kthulhu",
-  "version": "0.0.1",
-  "description": "Simpler transform streams",
+  "version": "0.0.2",
+  "description": "Simpler transform Streams",
   "main": "index.js",
   "scripts": {
     "test": "npm run tap",
