@@ -16,7 +16,7 @@ var Kthulhu = module.exports = function (options, transform, flush) {
     // shift arguments so users can ignore `options`
     flush = transform
     transform = options
-    options = {}
+    options = { objectMode: true }
   }
 
   this.options = options
