@@ -24,7 +24,9 @@
 </p>
 
 ```js
-STDIN.pipe($(function (chunk) { return /* transform chunk */ })).pipe(STDOUT)
+IN.pipe($(function (chunk) { 
+  return /* transform chunk */ 
+})).pipe(OUT)
 ```
 
 <hr>
