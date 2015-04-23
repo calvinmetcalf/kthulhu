@@ -24,9 +24,19 @@
 </p>
 
 ```js
-IN.pipe($(function (chunk) { 
-  return /* transform chunk */ 
-})).pipe(OUT)
+// Just passing through!
+process.stdin.pipe($(function (chunk) { 
+  return chunk
+})).pipe(process.stdout)
+
+// Swap all `a`'s for `z`'s
+fs.createReadStream("aaa.txt")
+  .pipe($(function (chunk) {
+    return chunk.map(function (ch) {
+      return (value == 97) ? 122 : ch 
+    })
+   }))
+  .pipe(fs.createWriteStream("zzz.txt"))
 ```
 
 <hr>
