@@ -33,6 +33,12 @@ var Kthulhu = module.exports = function (options, transform, flush) {
 Util.inherits(Kthulhu, Transform)
 
 Kthulhu.prototype._transform = function (chunk, encoding, next) {
+  chunk.map = chunk.map || function (cb) {
+    for (var i = 0; i < chunk.length; i++)
+      chunk[i] = cb(chunk[i], i, chunk)
+    return chunk
+  }
+
   var result = this._userTransform(chunk, encoding, next) || null
 
   var push = function (value) {
