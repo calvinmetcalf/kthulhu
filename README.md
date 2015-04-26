@@ -37,6 +37,12 @@ fs.createReadStream("aaa.txt")
     })
    }))
   .pipe(fs.createWriteStream("zzz.txt"))
+  
+// Using ES6 arrow functions (Use node --harmony)
+fs.createReadStream("aaa.txt")
+  .pipe($((chunk) => chunk.map((ch) => value == 97 ? 122 : ch))
+  .pipe(fs.createWriteStream("zzz.txt"))
+  
 ```
 
 <hr>
