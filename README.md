@@ -156,6 +156,5 @@ var rs = fs.createReadStream(__dirname + "/source.html")
 
 [MIT](http://opensource.org/licenses/MIT)
 
-[TravisLogo]: https://travis-ci.org/bucaran/kthulhu.svg?style=flat-square
-
+[TravisLogo]: http://img.shields.io/travis/bucaran/kthulhu.svg?style=flat-square
 [Travis]: https://travis-ci.org/bucaran/kthulhu
