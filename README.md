@@ -1,4 +1,4 @@
-[![Build Status][TravisLogo]][Travis] ![](https://img.shields.io/cocoapods/l/AFNetworking.svg)
+[![Build Status][TravisLogo]][Travis] ![](https://img.shields.io/badge/License-MIT-303030.svg?style=flat-square)
 
 
 <a name="kthulhu"></a>
@@ -156,6 +156,6 @@ var rs = fs.createReadStream(__dirname + "/source.html")
 
 [MIT](http://opensource.org/licenses/MIT)
 
-[TravisLogo]: https://travis-ci.org/bucaran/kthulhu.svg?branch=master
+[TravisLogo]: https://travis-ci.org/bucaran/kthulhu.svg?style=flat-square
 
 [Travis]: https://travis-ci.org/bucaran/kthulhu
