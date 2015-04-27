@@ -4,8 +4,8 @@
   "description": "Simpler transform Streams",
   "main": "index.js",
   "scripts": {
-    "test": "npm run tap",
-    "tap": "NODE_ENV=development tap test/*.js"
+    "test": "npm run tape | tspec",
+    "tape": "NODE_ENV=development tape test/*.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,10 @@
   },
   "homepage": "https://github.com/bucaran/kthulhu",
   "dependencies": {
-    "readable-stream": "^1.0.33",
-    "tap": "^0.7.1"
+    "readable-stream": "^1.0.33"
+  },
+  "devDependencies": {
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
   }
 }
