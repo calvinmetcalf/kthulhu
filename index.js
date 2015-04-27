@@ -43,8 +43,8 @@ Kthulhu.prototype._transform = function (chunk, encoding, next) {
 
   var push = function (value) {
     next(null, value)
-  };
+  }
 
 
-  Promise.resolve(result).then(push, next);
+  Promise.resolve(result).then(push, next)
 }
