@@ -30,17 +30,16 @@ process.stdin.pipe($(function (chunk) {
 // Swap all `a`'s for `z`'s
 fs.createReadStream("aaa.txt")
   .pipe($(function (chunk) {
-    return chunk.map(function (ch) {
-      return (value == 97) ? 122 : ch 
+    return chunk.map(function (value) {
+      return (value == 97) ? 122 : value 
     })
    }))
   .pipe(fs.createWriteStream("zzz.txt"))
   
 // Using ES6 arrow functions (Use node --harmony)
 fs.createReadStream("aaa.txt")
-  .pipe($((chunk) => chunk.map((ch) => value == 97 ? 122 : ch))
+  .pipe($((chunk) => chunk.map((value) => value == 97 ? 122 : value))
   .pipe(fs.createWriteStream("zzz.txt"))
-  
 ```
 
 <hr>
