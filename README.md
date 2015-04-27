@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/License-MIT-303030.svg?style=flat-square)
 [![Build Status][TravisLogo]][Travis] 
 ![](https://img.shields.io/badge/Shub-Niggurath-yellowgreen.svg?style=flat-square)
-[![NPM Downloads](http://img.shields.io/npm/dm/kthulhu.svg)](https://www.npmjs.org/package/kthulhu)
+[![NPM Downloads](http://img.shields.io/npm/dm/kthulhu.svg?style=flat-square)](https://www.npmjs.org/package/kthulhu)
 
 <a name="kthulhu"></a>
 
