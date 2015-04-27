@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/License-MIT-303030.svg?style=flat-square)
-[![Build Status][TravisLogo]][Travis] 
+[![Build Status][TravisLogo]][Travis]
 ![](https://img.shields.io/badge/Shub-Niggurath-yellowgreen.svg?style=flat-square)
 [![NPM Downloads](http://img.shields.io/npm/dm/kthulhu.svg?style=flat-square)](https://www.npmjs.org/package/kthulhu)
 
@@ -24,7 +24,7 @@
 
 ```js
 // Just passing through! ^(;,;)^
-process.stdin.pipe($(function (chunk) { 
+process.stdin.pipe($(function (chunk) {
   return chunk
 })).pipe(process.stdout)
 
@@ -32,11 +32,11 @@ process.stdin.pipe($(function (chunk) {
 fs.createReadStream("aaa.txt")
   .pipe($(function (chunk) {
     return chunk.map(function (value) {
-      return (value == 97) ? 122 : value 
+      return (value == 97) ? 122 : value
     })
    }))
   .pipe(fs.createWriteStream("zzz.txt"))
-  
+
 // Using ES6 arrow functions (Use node --harmony)
 fs.createReadStream("aaa.txt")
   .pipe($((chunk) => chunk.map((value) => value == 97 ? 122 : value))

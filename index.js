@@ -8,12 +8,11 @@ function isFunction (f) {
 
 var Kthulhu = module.exports = function (options, transform, flush) {
   if (!(this instanceof Kthulhu)) {
-    // simple class instantiation trick
     return new Kthulhu(options, transform, flush)
   }
 
   if (isFunction(options)) {
-    // shift arguments so users can ignore `options`
+    // shift arguments to allow skipping `options`
     flush = transform
     transform = options
     options = { objectMode: true }
@@ -39,12 +38,13 @@ Kthulhu.prototype._transform = function (chunk, encoding, next) {
     return chunk
   }
 
-  var result = this._userTransform(chunk, encoding, next) || null
+  var result = this._userTransform(chunk, encoding, next)
 
-  var push = function (value) {
-    next(null, value)
+  if (undefined !== result) {
+    Promise.resolve(result).then(push, next)
   }
 
-
-  Promise.resolve(result).then(push, next)
+  function push (value) {
+    next(null, value)
+  }
 }
