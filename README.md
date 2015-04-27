@@ -15,12 +15,12 @@
 
 <p align="center">
 <a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
-<img width=40% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
+<img width=30% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
 </a>
 </p>
 
 <p align="center">
-<em><strong><a href="https://www.google.co.jp/search?q=kthulhu&client=safari&rls=en&biw=1276&bih=715&source=lnms&tbm=isch&sa=X&ei=QbEtVcq9I4G2mAXgvYDwAQ&ved=0CAYQ_AUoAQ">kthulhu</a>'s Simpler transform Streams</strong></em>
+<em><strong>Elegant Streams</strong></em>
 </p>
 
 ```js
