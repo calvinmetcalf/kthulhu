@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
-<img width="65%" src="https://cloud.githubusercontent.com/assets/8317250/7349285/de6b198c-ed32-11e4-89bc-775b66ee3282.png">
+<img width="85%" src="https://cloud.githubusercontent.com/assets/8317250/7349624/7a15ac56-ed35-11e4-944f-b6e8684945c5.png">
 </a>
 </p>
 
