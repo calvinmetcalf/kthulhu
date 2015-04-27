@@ -5,10 +5,9 @@
 
 <p align="center">
 <a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
-<img width=15% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
+<img src="https://cloud.githubusercontent.com/assets/8317250/7349285/de6b198c-ed32-11e4-89bc-775b66ee3282.png">
 </a>
 </p>
-
 
 <p align="center">
 <b><a href="#synopsis">Synopsis</a></b>
@@ -22,7 +21,7 @@
 
 
 ```js
-// Just passing through!
+// Just passing through! ^(;,;)^
 process.stdin.pipe($(function (chunk) { 
   return chunk
 })).pipe(process.stdout)
@@ -69,7 +68,7 @@ npm install kthulhu
 ```js
 var $ = require("kthulhu")
 
-process.stdin
+process.stdin // ^(;,;)^
   .pipe($(function (chunk) {
     return chunk.toString().split("").reverse().join("")
   }))
@@ -86,7 +85,7 @@ kthulhu⏎
 `return chunk` is used to notify the stream implementation we are _done_ processing the supplied chunk. If your transformation is asynchrounous, you can return a [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) instead and kthulhu will apply its resolved value to the buffer (whenever that happens).
 
 ```js
-var $ = require("kthulhu");
+var $ = require("kthulhu") //^(;,;)^
 
 process.stdin
   .pipe($(function (chunk) {
@@ -143,7 +142,7 @@ function css(clss, transform) {
 var fs = require("fs")
 var rs = fs.createReadStream(__dirname + "/source.html")
   .pipe(css(".section", function (html) {
-    return /* transform html */
+    return /* ^(;,;)^ transform html */
   }))
   .pipe(process.stdout)
 ```
