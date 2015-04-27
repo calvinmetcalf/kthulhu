@@ -37,14 +37,25 @@ Kthulhu.prototype._transform = function (chunk, encoding, next) {
       chunk[i] = cb(chunk[i], i, chunk)
     return chunk
   }
-
-  var result = this._userTransform(chunk, encoding, next)
+  var done;
+  var promise = new Promise(function (resolve, reject){
+    done = function (err, resp) {
+      if (err) {
+          return reject(err)
+      }
+      resolve(resp);
+    });
+  });
+  promise.then(function (resp) {
+    next(null, resp)
+  }, next)
+  var result = this._userTransform(chunk, encoding, done)
 
   if (undefined !== result) {
-    Promise.resolve(result).then(push, next)
+    Promise.resolve(result).then(push, done)
   }
 
   function push (value) {
-    next(null, value)
+    done(null, value)
   }
 }
