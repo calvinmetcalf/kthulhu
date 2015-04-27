@@ -19,10 +19,6 @@
 </a>
 </p>
 
-<p align="center">
-<em><strong>Elegant Streams</strong></em>
-</p>
-
 ```js
 // Just passing through!
 process.stdin.pipe($(function (chunk) { 
