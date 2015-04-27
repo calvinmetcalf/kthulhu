@@ -4,6 +4,13 @@
 <a name="kthulhu"></a>
 
 <p align="center">
+<a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
+<img width=15% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
+</a>
+</p>
+
+
+<p align="center">
 <b><a href="#synopsis">Synopsis</a></b>
 |
 <b><a href="#install">Install</a></b>
@@ -13,11 +20,6 @@
 <b><a href="#license">License</a></b>
 </p>
 
-<p align="center">
-<a href="https://github.com/bucaran/kthulhu/blob/master/kthulhu">
-<img width=15% src="https://cloud.githubusercontent.com/assets/8317250/7150097/26393d02-e351-11e4-8eff-eff06ceb44e4.png">
-</a>
-</p>
 
 ```js
 // Just passing through!
