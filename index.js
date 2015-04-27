@@ -44,7 +44,7 @@ Kthulhu.prototype._transform = function (chunk, encoding, next) {
           return reject(err)
       }
       resolve(resp);
-    });
+    }
   });
   promise.then(function (resp) {
     next(null, resp)
